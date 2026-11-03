@@ -70,6 +70,7 @@ Thumbs.db
 *.zip
 *.tar.gz
 backup_original/
+backup_pre_enhancement/
 extracted_zip/
 .emergent/
 **/.emergent/

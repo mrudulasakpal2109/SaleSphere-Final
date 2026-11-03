@@ -19,6 +19,7 @@ import ForgotPassword from "@/pages/ForgotPassword";
 import StaticPage from "@/pages/StaticPage";
 import NotFound from "@/pages/NotFound";
 import Festive from "@/pages/Festive";
+import HomeEssentials from "@/pages/HomeEssentials";
 import ManagerLogin from "@/pages/manager/ManagerLogin";
 import ManagerLayout from "@/pages/manager/ManagerLayout";
 import ManagerOverview from "@/pages/manager/ManagerOverview";
@@ -63,6 +64,8 @@ export default function App() {
           <Route path="/men" element={<Shop mode={{ kind: "category", category: "men" }} />} />
           <Route path="/women" element={<Shop mode={{ kind: "category", category: "women" }} />} />
           <Route path="/kids" element={<Shop mode={{ kind: "category", category: "kids" }} />} />
+          <Route path="/home-essentials" element={<HomeEssentials />} />
+          <Route path="/home" element={<Navigate to="/home-essentials" replace />} />
           <Route path="/new-arrivals" element={<Shop mode={{ kind: "tag", tag: "new" }} />} />
           <Route path="/sale" element={<Shop mode={{ kind: "sale" }} />} />
           <Route path="/search" element={<Shop mode={{ kind: "search" }} />} />

@@ -27,17 +27,25 @@ router = APIRouter(prefix="/manager/demand", tags=["demand_predictor"])
 class DemandPredictIn(BaseModel):
     name: str = Field(min_length=2, max_length=120)
     description: str = Field(default="")
-    category: str = Field(pattern="^(Men|Women|Kids|men|women|kids)$")
+    category: str = Field(pattern="^(Men|Women|Kids|Home|Home Essentials|men|women|kids|home|home-essentials)$")
     subcategory: str = Field(min_length=2, max_length=50)
-    brand: str = Field(min_length=2, max_length=60)
+    brand: str = Field(default="Salesphere Luxe", min_length=2, max_length=60)
+    collection: Optional[str] = Field(default="Western", description="Western, Traditional, or Home Essentials")
     price: float = Field(gt=0, description="Selling price in INR")
     discount_percentage: float = Field(default=0.0, ge=0.0, le=80.0)
     sizes: List[str] = Field(default=["S", "M", "L", "XL"])
     color: str = Field(default="Classic Black")
-    fabric: str = Field(default="Cotton")
+    fabric: Optional[str] = Field(default=None)
+    material: Optional[str] = Field(default=None)
+    room: Optional[str] = Field(default=None)
+    sleeve_type: Optional[str] = Field(default=None)
+    pattern: Optional[str] = Field(default=None)
+    occasion: Optional[str] = Field(default=None)
+    dimensions: Optional[str] = Field(default=None)
     launch_month: int = Field(default=3, ge=1, le=12)
     season: Optional[str] = None
     proposed_stock: int = Field(default=100, ge=1, le=10000)
+    target_customer: Optional[str] = Field(default="Festive, Wedding & Cultural Celebrants")
     marketing_budget: Optional[float] = Field(default=None, ge=0)
     image_url: Optional[str] = None
 
@@ -45,14 +53,17 @@ class ApproveLaunchIn(BaseModel):
     prediction_id: Optional[str] = None
     name: str = Field(min_length=2, max_length=120)
     description: str = Field(default="")
-    category: str = Field(pattern="^(Men|Women|Kids|men|women|kids)$")
+    category: str = Field(pattern="^(Men|Women|Kids|Home|Home Essentials|men|women|kids|home|home-essentials)$")
     subcategory: str = Field(min_length=2, max_length=50)
-    brand: str = Field(min_length=2, max_length=60)
+    brand: str = Field(default="Salesphere Luxe", min_length=2, max_length=60)
+    collection: Optional[str] = Field(default="Western")
     price: float = Field(gt=0)
     discount_percentage: float = Field(default=0.0, ge=0.0, le=80.0)
     sizes: List[str] = Field(min_length=1)
     color: str = Field(default="Classic Black")
-    fabric: str = Field(default="Cotton")
+    fabric: Optional[str] = Field(default=None)
+    material: Optional[str] = Field(default=None)
+    room: Optional[str] = Field(default=None)
     launch_month: int = Field(default=3, ge=1, le=12)
     season: Optional[str] = None
     approved_stock: int = Field(gt=0, le=10000, description="Manager-approved initial inventory quantity")
@@ -116,8 +127,24 @@ async def approve_product_launch(input_data: ApproveLaunchIn, manager = Depends(
     4. Updates prediction audit record in op_demand_predictions to 'Approved'.
     5. Makes the product immediately browseable, searchable, and purchasable on the storefront!
     """
-    cat_clean = input_data.category.strip().capitalize()
-    cat_lower = cat_clean.lower()
+    cat_raw = input_data.category.strip().lower()
+    if "home" in cat_raw:
+        cat_clean = "Home Essentials"
+        cat_lower = "home"
+        fallback_img = "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800&auto=format&fit=crop&q=80"
+    elif cat_raw == "men":
+        cat_clean = "Men"
+        cat_lower = "men"
+        fallback_img = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80"
+    elif cat_raw == "kids":
+        cat_clean = "Kids"
+        cat_lower = "kids"
+        fallback_img = "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800&auto=format&fit=crop&q=80"
+    else:
+        cat_clean = "Women"
+        cat_lower = "women"
+        fallback_img = "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80"
+
     subcat_clean = input_data.subcategory.strip().capitalize()
 
     # Calculate original price from discount
@@ -127,25 +154,18 @@ async def approve_product_launch(input_data: ApproveLaunchIn, manager = Depends(
 
     # Generate deterministic SKU
     unique_hex = uuid.uuid4().hex[:4].upper()
-    sku = f"SLSP-{cat_clean[:3].upper()}-{subcat_clean[:3].upper()}-{unique_hex}"
+    prefix = "HOM" if "home" in cat_lower else cat_clean[:3].upper()
+    sku = f"SLSP-{prefix}-{subcat_clean[:3].upper()}-{unique_hex}"
 
-    # Default fallback image if none provided
-    img_url = input_data.image_url or (
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&auto=format&fit=crop&q=80"
-        if cat_lower == "women"
-        else (
-            "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80"
-            if cat_lower == "men"
-            else "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800&auto=format&fit=crop&q=80"
-        )
-    )
+    img_url = input_data.image_url or fallback_img
+    material_desc = input_data.fabric or input_data.material or "premium materials"
 
     product_id = str(uuid.uuid4())
     op_product_payload = {
         "id": product_id,
         "sku": sku,
         "name": input_data.name.strip(),
-        "description": input_data.description.strip() or f"New luxury {cat_clean} {subcat_clean} crafted from premium {input_data.fabric}.",
+        "description": input_data.description.strip() or f"New luxury {cat_clean} {subcat_clean} crafted from {material_desc}.",
         "category": cat_lower,
         "subcategory": subcat_clean.lower(),
         "price": unit_price,

@@ -15,6 +15,7 @@ const CAMPAIGN = {
   tile_men: "https://images.unsplash.com/photo-1617114919297-3c8ddb01f599?auto=format&fit=crop&w=900&q=80",
   tile_women: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=900&q=80",
   tile_kids: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=900&q=80",
+  tile_home: "/photos_for_homeessential/31fec69b-c1a9-4ac7-b26c-1987173c2ab8.jpg",
 };
 
 const TRUST_BADGES = [
@@ -28,6 +29,7 @@ const CATEGORY_TILES = [
   { to: "/men", label: "Men", copy: "Sharp essentials & weekend staples", img: CAMPAIGN.tile_men, testId: "category-tile-men" },
   { to: "/women", label: "Women", copy: "Dresses, kurtas & elevated basics", img: CAMPAIGN.tile_women, testId: "category-tile-women" },
   { to: "/kids", label: "Kids", copy: "Playful picks for little icons", img: CAMPAIGN.tile_kids, testId: "category-tile-kids" },
+  { to: "/home-essentials", label: "Home Essentials", copy: "Festive décor, brass diyas, torans & pooja essentials", img: CAMPAIGN.tile_home, testId: "category-tile-home" },
 ];
 
 function useRail(queryString: string) {
@@ -43,6 +45,7 @@ export default function Home() {
   const trending = useRail("tag=trending&sort=popular&limit=8");
   const bestsellers = useRail("tag=bestseller&sort=popular&limit=8");
   const seasonal = useRail("tag=seasonal&limit=8");
+  const homeEssentials = useRail("category=home&sort=popular&limit=8");
   const sale = useRail("on_sale=true&sort=discount&limit=8");
   const recommended = useRail("sort=rating&limit=8");
 
@@ -94,11 +97,12 @@ export default function Home() {
                 Explore the Sale
               </Link>
             </div>
-            <div className="mt-8 flex gap-5 text-sm text-[#E5DFD7]">
+            <div className="mt-8 flex flex-wrap gap-5 text-sm text-[#E5DFD7]">
               {[
                 { to: "/men", label: "Shop Men" },
                 { to: "/women", label: "Shop Women" },
                 { to: "/kids", label: "Shop Kids" },
+                { to: "/home-essentials", label: "Shop Home" },
               ].map((l) => (
                 <Link key={l.to} to={l.to} data-testid={`hero-${l.label.replace(/\s/g, "-").toLowerCase()}`} className="border-b border-[#F5C29A]/60 pb-0.5 transition-colors hover:text-[#F5C29A]">
                   {l.label}
@@ -127,7 +131,7 @@ export default function Home() {
       {/* ---------------- categories ---------------- */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8" data-testid="home-categories">
         <SectionHeading overline="Shop by Category" title="Made for every you" linkTo="/new-arrivals" linkLabel="View all" />
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-6">
           {CATEGORY_TILES.map((tile) => (
             <Link
               key={tile.to}
@@ -202,6 +206,12 @@ export default function Home() {
           <SectionHeading overline="Collections" title="Seasonal Edits" linkTo="/women" linkLabel="Shop women" />
           <ProductRail products={rail(seasonal)} />
         </div>
+      </section>
+
+      {/* ---------------- home essentials ---------------- */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8" data-testid="home-essentials-section">
+        <SectionHeading overline="Festive Indian Living" title="Indian Festive Décor & Home Essentials" linkTo="/home-essentials" linkLabel="Explore Festive Home" />
+        <ProductRail products={rail(homeEssentials)} />
       </section>
 
       {/* ---------------- sale ---------------- */}

@@ -13,7 +13,7 @@ import { SUBCATEGORIES, SORT_OPTIONS, PAGE_SIZE, productsQueryString } from "@/l
 import type { ProductListResponse } from "@/types";
 
 export type ShopMode =
-  | { kind: "category"; category: "men" | "women" | "kids" }
+  | { kind: "category"; category: "men" | "women" | "kids" | "home" }
   | { kind: "tag"; tag: string }
   | { kind: "sale" }
   | { kind: "search" };
@@ -22,6 +22,7 @@ const CATEGORY_META: Record<string, { overline: string; title: string }> = {
   men: { overline: "For Him", title: "Men" },
   women: { overline: "For Her", title: "Women" },
   kids: { overline: "For Little Ones", title: "Kids" },
+  home: { overline: "For Your Living Space", title: "Home Essentials" },
 };
 
 export default function Shop({ mode }: { mode: ShopMode }) {
@@ -247,7 +248,7 @@ function shopTitle(mode: ShopMode, q: string): string {
 }
 
 function basePath(mode: ShopMode): string {
-  if (mode.kind === "category") return `/${mode.category}`;
+  if (mode.kind === "category") return mode.category === "home" ? "/home-essentials" : `/${mode.category}`;
   if (mode.kind === "tag") return "/new-arrivals";
   if (mode.kind === "sale") return "/sale";
   return "/search";

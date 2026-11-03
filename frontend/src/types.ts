@@ -6,7 +6,7 @@ export interface Product {
   sku: string;
   name: string;
   description: string;
-  category: "men" | "women" | "kids";
+  category: "men" | "women" | "kids" | "home";
   subcategory: string;
   price: number;
   original_price: number | null;

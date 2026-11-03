@@ -1,61 +1,187 @@
 Product_ID,Product_Name,Category_ID,Category,Subcategory,Brand,Product_Type,Unit_Price,Cost_Price,Discount_Percentage,Season,Product_Status,Created_At,Updated_At
-101,Silk Floral Wrap Dress,10,Women,Dresses,Aura London,Apparel,2499.0,1100.0,10,Spring,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-102,Pleated Chiffon Midi Dress,10,Women,Dresses,Aura London,Apparel,2999.0,1350.0,15,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-103,Embroidered Anarkali Kurti,10,Women,Ethnic Wear,Salesphere Luxe,Ethnic,1899.0,850.0,20,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-104,Banarasi Silk Festive Saree,10,Women,Ethnic Wear,Salesphere Luxe,Ethnic,4599.0,2100.0,10,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-105,Casual Ruffled Cotton Blouse,10,Women,Tops & Shirts,UrbanThread,Apparel,1299.0,580.0,5,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-106,Oversized Cable-Knit Sweater,10,Women,Sweaters & Knits,NeoClassic,Winterwear,2199.0,980.0,10,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-107,High-Rise Skinny Fit Jeans,10,Women,Bottoms,UrbanThread,Denim,1999.0,890.0,15,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-108,Tailored Linen Wide-Leg Trousers,10,Women,Bottoms,NeoClassic,Apparel,1799.0,800.0,0,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-109,Quilted Puffer Winter Jacket,10,Women,Outerwear,NeoClassic,Outerwear,3499.0,1600.0,25,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-110,Seamless Breathable Yoga Leggings,10,Women,Activewear,UrbanThread,Sportswear,1499.0,650.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-111,Lace-Trim Comfort Satin Chemise,10,Women,Loungewear,Aura London,Intimates,1199.0,500.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-112,A-Line Corduroy Button-Front Skirt,10,Women,Bottoms,UrbanThread,Apparel,1399.0,620.0,5,Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-113,Slim Fit Oxford Cotton Shirt,20,Men,Shirts,UrbanThread,Apparel,1699.0,750.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-114,Classic Linen Mandarin Collar Shirt,20,Men,Shirts,Salesphere Luxe,Apparel,1999.0,880.0,15,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-115,Premium Combed Cotton Crewneck T-Shirt,20,Men,T-Shirts & Polos,UrbanThread,Apparel,799.0,320.0,0,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-116,Mercerised Pique Polo T-Shirt,20,Men,T-Shirts & Polos,NeoClassic,Apparel,1299.0,550.0,10,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-117,Heritage Raw Indigo Selvedge Jeans,20,Men,Denim Jeans,UrbanThread,Denim,2499.0,1100.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-118,Stretch Chino Casual Trousers,20,Men,Trousers,NeoClassic,Apparel,1899.0,820.0,15,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-119,Textured Nehru Festive Jacket,20,Men,Ethnic Wear,Salesphere Luxe,Ethnic,2799.0,1250.0,10,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-120,Tussar Silk Kurta Pajama Set,20,Men,Ethnic Wear,Salesphere Luxe,Ethnic,3299.0,1450.0,20,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-121,Wool-Blend Structured Blazer,20,Men,Outerwear,Salesphere Luxe,Outerwear,4999.0,2200.0,15,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-122,Dry-Fit Moisture Wicking Gym Shorts,20,Men,Activewear,UrbanThread,Sportswear,999.0,420.0,5,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-123,Fleece-Lined Heavyweight Hoodie,20,Men,Sweaters & Knits,UrbanThread,Winterwear,2299.0,1020.0,15,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-124,Classic Leather Derby Formal Shoes,20,Men,Footwear,NeoClassic,Footwear,3499.0,1550.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-125,Boys Graphic Cotton T-Shirt Set,30,Kids,Boys Wear,LittleChamps,Apparel,799.0,320.0,10,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-126,Boys Stretch Denim Jogger Jeans,30,Kids,Boys Wear,LittleChamps,Denim,1199.0,500.0,15,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-127,Girls Ruffled Floral Party Frock,30,Kids,Girls Wear,LittleChamps,Apparel,1499.0,620.0,10,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-128,Girls Cotton Leggings Pack of 3,30,Kids,Girls Wear,LittleChamps,Apparel,899.0,360.0,5,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-129,Unisex Fleece Animal Hooded Jumpsuit,30,Kids,Infants,LittleChamps,Winterwear,1299.0,550.0,10,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-130,Infant Organic Cotton Rompers (Pack of 2),30,Kids,Infants,LittleChamps,Apparel,999.0,400.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-131,Kids Lightweight Rain-Resistant Windbreaker,30,Kids,Outerwear,LittleChamps,Outerwear,1599.0,680.0,15,Monsoon,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-132,Kids Light-Up Casual Sneakers,30,Kids,Footwear,LittleChamps,Footwear,1799.0,750.0,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-133,Signature Tailored Linen Wide-Leg Trousers,10,Women,Bottoms,NeoClassic,Apparel,2189.0,985.05,5,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-134,Urban Premium Combed Cotton Crewneck T-Shirt,20,Men,T-Shirts & Polos,UrbanThread,Apparel,1029.0,463.05,20,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-135,Premium Oversized Cable-Knit Sweater,10,Women,Sweaters & Knits,NeoClassic,Winterwear,2399.0,1079.55,0,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-136,Urban Oversized Cable-Knit Sweater,10,Women,Sweaters & Knits,NeoClassic,Winterwear,2259.0,1016.55,20,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-137,Premium Pleated Chiffon Midi Dress,10,Women,Dresses,Aura London,Apparel,3009.0,1354.05,20,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-138,Urban Girls Ruffled Floral Party Frock,30,Kids,Girls Wear,LittleChamps,Apparel,1679.0,755.55,10,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-139,Monochrome Silk Floral Wrap Dress,10,Women,Dresses,Aura London,Apparel,3049.0,1372.05,15,Spring,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-140,Vintage Dry-Fit Moisture Wicking Gym Shorts,20,Men,Activewear,UrbanThread,Sportswear,1049.0,472.05,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-141,Signature High-Rise Skinny Fit Jeans,10,Women,Bottoms,UrbanThread,Denim,2159.0,971.55,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-142,Premium Fleece-Lined Heavyweight Hoodie,20,Men,Sweaters & Knits,UrbanThread,Winterwear,2379.0,1070.55,0,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-143,Premium Infant Organic Cotton Rompers (Pack of 2),30,Kids,Infants,LittleChamps,Apparel,1039.0,467.55,15,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-144,Monochrome Textured Nehru Festive Jacket,20,Men,Ethnic Wear,Salesphere Luxe,Ethnic,3229.0,1453.05,10,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-145,Classic Slim Fit Oxford Cotton Shirt,20,Men,Shirts,UrbanThread,Apparel,1669.0,751.05,5,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-146,Signature Textured Nehru Festive Jacket,20,Men,Ethnic Wear,Salesphere Luxe,Ethnic,3459.0,1556.55,0,Festive/Autumn,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-147,Vintage Boys Graphic Cotton T-Shirt Set,30,Kids,Boys Wear,LittleChamps,Apparel,949.0,427.05,10,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-148,Vintage Lace-Trim Comfort Satin Chemise,10,Women,Loungewear,Aura London,Intimates,1329.0,598.05,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-149,Premium Casual Ruffled Cotton Blouse,10,Women,Tops & Shirts,UrbanThread,Apparel,1559.0,701.55,20,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-150,Urban Mercerised Pique Polo T-Shirt,20,Men,T-Shirts & Polos,NeoClassic,Apparel,1479.0,665.55,10,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-151,Classic Premium Combed Cotton Crewneck T-Shirt,20,Men,T-Shirts & Polos,UrbanThread,Apparel,909.0,409.05,0,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-152,Monochrome Premium Combed Cotton Crewneck T-Shirt,20,Men,T-Shirts & Polos,UrbanThread,Apparel,829.0,373.05,10,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-153,Vintage Boys Stretch Denim Jogger Jeans,30,Kids,Boys Wear,LittleChamps,Denim,1209.0,544.05,20,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-154,Urban Wool-Blend Structured Blazer,20,Men,Outerwear,Salesphere Luxe,Outerwear,5749.0,2587.05,15,Winter,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-155,Urban Infant Organic Cotton Rompers (Pack of 2),30,Kids,Infants,LittleChamps,Apparel,1089.0,490.05,5,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-156,Classic Heritage Raw Indigo Selvedge Jeans,20,Men,Denim Jeans,UrbanThread,Denim,2859.0,1286.55,20,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-157,Signature Kids Light-Up Casual Sneakers,30,Kids,Footwear,LittleChamps,Footwear,2189.0,985.05,0,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-158,Classic Seamless Breathable Yoga Leggings,10,Women,Activewear,UrbanThread,Sportswear,1529.0,688.05,15,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-159,Heritage Casual Ruffled Cotton Blouse,10,Women,Tops & Shirts,UrbanThread,Apparel,1439.0,647.55,15,Summer,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
-160,Premium Heritage Raw Indigo Selvedge Jeans,20,Men,Denim Jeans,UrbanThread,Denim,3099.0,1394.55,0,All-Season,Active,2023-01-01 00:00:00,2025-01-15 10:30:00
+101,Essential Crew-Neck Cotton T-Shirt,2,Men,T-shirts,UrbanThread,Western,599.0,311.48,40.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+102,Oversized Drop-Shoulder Heavyweight Tee,2,Men,T-shirts,UrbanThread,Western,799.0,415.48,38.5,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+103,Garment-Dyed Relaxed Boxy Tee,2,Men,T-shirts,UrbanThread,Western,699.0,363.48,36.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+104,Vintage Acid-Wash Graphic Tee,2,Men,T-shirts,UrbanThread,Western,849.0,441.48,39.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+105,Nautical Breton Striped Tee,2,Men,T-shirts,UrbanThread,Western,749.0,389.48,37.5,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+106,Waffle-Knit Long-Sleeve Henley Tee,2,Men,T-shirts,UrbanThread,Western,999.0,519.48,37.5,Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+107,Classic Oxford Button-Down Shirt,2,Men,Shirts,UrbanThread,Western,1299.0,675.48,35.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+108,Cuban-Collar Resort Camp Shirt,2,Men,Shirts,UrbanThread,Western,1149.0,597.48,36.1,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+109,Pure French Linen Casual Shirt,2,Men,Shirts,UrbanThread,Western,1899.0,987.48,32.2,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+110,Indigo Chambray Denim Shirt,2,Men,Shirts,UrbanThread,Western,1449.0,753.48,34.1,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+111,Japanese Corduroy Overshirt,2,Men,Shirts,UrbanThread,Western,1999.0,1039.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+112,Micro-Houndstooth Business Shirt,2,Men,Shirts,UrbanThread,Western,1399.0,727.48,36.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+113,Textured Pique Cotton Polo,2,Men,Polos,UrbanThread,Western,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+114,Fine-Knit Johnny Collar Polo,2,Men,Polos,UrbanThread,Western,1299.0,675.48,31.6,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+115,Mercerized Cotton Zipper Polo,2,Men,Polos,UrbanThread,Western,1199.0,623.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+116,Heavyweight French Terry Pullover Hoodie,2,Men,Hoodies & Sweatshirts,UrbanThread,Western,1799.0,935.48,35.7,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+117,Minimalist Raglan Crewneck Sweatshirt,2,Men,Hoodies & Sweatshirts,UrbanThread,Western,1499.0,779.48,34.8,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+118,Unstructured Tailored Linen Blazer,2,Men,Jackets,Salesphere Luxe,Western,3299.0,1715.48,34.0,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+119,Classic Sherpa-Collar Denim Trucker Jacket,2,Men,Jackets,UrbanThread,Western,2799.0,1455.48,30.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+120,Suede-Finish Zip Bomber Jacket,2,Men,Jackets,UrbanThread,Western,3499.0,1819.48,30.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+121,Slim-Fit Stretch Selvedge Jeans,2,Men,Jeans,UrbanThread,Western,1799.0,935.48,40.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+122,Relaxed 90s Straight-Leg Denim,2,Men,Jeans,UrbanThread,Western,1899.0,987.48,32.2,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+123,Clean Jet-Black Stay-Dark Jeans,2,Men,Jeans,UrbanThread,Western,1699.0,883.48,34.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+124,Flat-Front Tailored Chino Trousers,2,Men,Trousers,UrbanThread,Western,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+125,Double-Pleated Smart Relaxed Trousers,2,Men,Trousers,Salesphere Luxe,Western,1699.0,883.48,32.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+126,Tactical Multi-Pocket Cotton Cargo Pants,2,Men,Trousers,UrbanThread,Western,1899.0,987.48,32.2,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+127,Drawstring Linen-Blend Casual Pants,2,Men,Trousers,UrbanThread,Western,1599.0,831.48,33.3,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+128,Relaxed Cotton Poplin Vacation Shorts,2,Men,Trousers,UrbanThread,Western,899.0,467.48,35.7,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+129,Handloom Silk-Blend Festive Kurta Set,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,1899.0,987.48,29.6,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+130,Zari Embroidered Nehru Jacket with Kurta,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,3299.0,1715.48,34.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+131,Lucknowi Handcrafted Chikankari Kurta,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,2199.0,1143.48,31.3,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+132,Bandhani Printed Angrakha Kurta Set,2,Men,Ethnic Wear,IndoChic,Traditional,2499.0,1299.48,32.4,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+133,Royal Velvet Embroidered Sherwani,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,6499.0,3379.48,35.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+134,Indo-Western Asymmetrical Draped Kurta,2,Men,Ethnic Wear,IndoChic,Traditional,2799.0,1455.48,30.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+135,Classic Pathani Suit with Roll-Up Sleeves,2,Men,Ethnic Wear,IndoChic,Traditional,1999.0,1039.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+136,Textured Jodhpuri Bandhgala Suit,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,4999.0,2599.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+137,Mirror-Work Festive Short Kurta,2,Men,Ethnic Wear,IndoChic,Traditional,1499.0,779.48,31.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+138,Chanderi Foil-Printed Festive Kurta,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,1699.0,883.48,32.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+139,Brocade Festive Waistcoat,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,1799.0,935.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+140,Gharana Embroidered Sherwani Set,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,7999.0,4159.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+141,Festive Sequin Embellished Kurta Set,2,Men,Ethnic Wear,IndoChic,Traditional,2299.0,1195.48,30.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+142,Pastel Organza Kurta with Churidar,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,2599.0,1351.48,31.6,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+143,Dhoti-Kurta Traditional Festive Ensemble,2,Men,Ethnic Wear,IndoChic,Traditional,2199.0,1143.48,31.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+144,Tussar Silk Printed Heritage Kurta,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,2399.0,1247.48,31.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+145,Velvet Shawl-Lapel Festive Blazer,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,3999.0,2079.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+146,Cotton Slub Everyday Puja Kurta,2,Men,Ethnic Wear,IndoChic,Traditional,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+147,Embroidered Silk-Blend Bundi Jacket,2,Men,Ethnic Wear,Salesphere Luxe,Traditional,2199.0,1143.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+148,Pashmina-Touch Embroidered Stole,2,Men,Accessories,Salesphere Luxe,Traditional,1299.0,675.48,31.6,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+149,Court-Classic White Leather Sneakers,2,Men,Footwear,UrbanThread,Western,2499.0,1299.48,28.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+150,Tan Hand-Burnished Chelsea Boots,2,Men,Footwear,UrbanThread,Western,3299.0,1715.48,26.7,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+151,Handcrafted Leather Mojari Juttis,2,Men,Footwear,Salesphere Luxe,Traditional,1699.0,883.48,32.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+152,Reversible Formal Leather Belt,2,Men,Accessories,UrbanThread,Western,899.0,467.48,30.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+153,Matte Chronograph Minimalist Watch,2,Men,Accessories,UrbanThread,Western,2499.0,1299.48,37.5,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+154,Hand-Rolled Silk Pocket Square Set,2,Men,Accessories,Salesphere Luxe,Traditional,699.0,363.48,30.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+155,Emerald Long-Sleeve Tiered Maxi Dress,1,Women,Dresses,Salesphere Luxe,Western,2499.0,1299.48,37.5,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+156,Parisian Floral Slip Midi Dress,1,Women,Dresses,Salesphere Luxe,Western,1999.0,1039.48,37.5,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+157,Satin Cowl-Neck Evening Slip Dress,1,Women,Dresses,Salesphere Luxe,Western,2699.0,1403.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+158,Tiered Cotton Broderie Midi Dress,1,Women,Dresses,UrbanThread,Western,1899.0,987.48,34.5,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+159,Ribbed Knit Long-Sleeve Bodycon Dress,1,Women,Dresses,UrbanThread,Western,1799.0,935.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+160,Printed Belted Utility Shirt Dress,1,Women,Dresses,UrbanThread,Western,2099.0,1091.48,36.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+161,Boho Embroidered Peasant Maxi Dress,1,Women,Dresses,Salesphere Luxe,Western,2599.0,1351.48,33.3,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+162,Wide-Leg Tailored Linen Jumpsuit,1,Women,Dresses,UrbanThread,Western,2299.0,1195.48,34.3,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+163,Linen-Blend Relaxed Tunic Top,1,Women,Tops,UrbanThread,Western,1199.0,623.48,33.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+164,Smocked Peplum Square-Neck Blouse,1,Women,Tops,UrbanThread,Western,999.0,519.48,33.4,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+165,Silk-Touch Draped Cowl Camisole,1,Women,Tops,Salesphere Luxe,Western,899.0,467.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+166,Broderie Anglaise Puff-Sleeve Blouse,1,Women,Tops,UrbanThread,Western,1399.0,727.48,30.0,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+167,Off-Shoulder Ribbed Knit Crop Top,1,Women,Tops,UrbanThread,Western,799.0,415.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+168,Relaxed Boyfriend Fit Graphic Tee,1,Women,Tops,UrbanThread,Western,749.0,389.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+169,Satin Collared Button-Up Blouse,1,Women,Tops,Salesphere Luxe,Western,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+170,Ribbed Knit Halterneck Tank,1,Women,Tops,UrbanThread,Western,649.0,337.48,35.0,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+171,Chunky Cable-Knit Oversized Pullover,1,Women,Sweaters & Cardigans,Salesphere Luxe,Western,1999.0,1039.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+172,Cropped Button-Front Mohair Cardigan,1,Women,Sweaters & Cardigans,UrbanThread,Western,1799.0,935.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+173,Ribbed Turtleneck Cashmere-Touch Sweater,1,Women,Sweaters & Cardigans,Salesphere Luxe,Western,1699.0,883.48,32.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+174,Double-Breasted Classic Trench Coat,1,Women,Jackets,Salesphere Luxe,Western,3999.0,2079.48,33.3,Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+175,Faux-Leather Cropped Biker Jacket,1,Women,Jackets,UrbanThread,Western,2999.0,1559.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+176,Tailored Single-Breasted Hourglass Blazer,1,Women,Jackets,Salesphere Luxe,Western,2899.0,1507.48,32.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+177,Distressed Oversized Denim Jacket,1,Women,Jackets,UrbanThread,Western,2199.0,1143.48,31.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+178,High-Rise Wide-Leg Flare Jeans,1,Women,Jeans,UrbanThread,Western,1999.0,1039.48,39.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+179,Vintage Mom-Fit Rigid Cotton Jeans,1,Women,Jeans,UrbanThread,Western,1899.0,987.48,32.2,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+180,High-Waist Pleated Front Dress Trousers,1,Women,Trousers,Salesphere Luxe,Western,1799.0,935.48,30.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+181,Flowy Linen Wide-Leg Palazzo Pants,1,Women,Trousers,UrbanThread,Western,1499.0,779.48,34.8,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+182,Bias-Cut Satin Midi Skirt,1,Women,Trousers,Salesphere Luxe,Western,1699.0,883.48,32.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+183,Bridal Zari Embroidered Silk Lehenga Choli,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,6999.0,3639.48,41.7,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+184,Velvet Banarasi Brocade Lehenga Set,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,5999.0,3119.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+185,Handloom Kanjeevaram Silk Woven Saree,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,4499.0,2339.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+186,Sequinned Organza Cocktail Saree,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,3899.0,2027.48,32.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+187,Royal Chanderi Silk Anarkali Suit Set,1,Women,Kurtas,Salesphere Luxe,Traditional,2999.0,1559.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+188,Lucknowi Hand-Embroidered Chikankari Kurti,1,Women,Kurtas,IndoChic,Traditional,1899.0,987.48,34.5,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+189,Pure Cotton Block-Printed Straight Kurta,1,Women,Kurtas,IndoChic,Traditional,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+190,Georgette Floral Sharara 3-Piece Set,1,Women,Kurtas,Salesphere Luxe,Traditional,3499.0,1819.48,34.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+191,A-Line Embroidered Velvet Kurta Set,1,Women,Kurtas,Salesphere Luxe,Traditional,2799.0,1455.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+192,Traditional Banarasi Woven Silk Saree,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,3499.0,1819.48,30.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+193,Bandhani Georgette Festive Saree,1,Women,Ethnic Wear,IndoChic,Traditional,2299.0,1195.48,30.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+194,Mirror-Embroidered Navratri Chaniya Choli,1,Women,Ethnic Wear,IndoChic,Traditional,3799.0,1975.48,30.9,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+195,Palazzo Suit with Foil Print Dupatta,1,Women,Kurtas,IndoChic,Traditional,1999.0,1039.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+196,Gharara Festive Silk Suit Set,1,Women,Kurtas,Salesphere Luxe,Traditional,3699.0,1923.48,32.7,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+197,Gota Patti Festive Floor-Length Gown,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,3299.0,1715.48,34.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+198,Chiffon Hand-Painted Floral Saree,1,Women,Ethnic Wear,Salesphere Luxe,Traditional,2799.0,1455.48,30.0,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+199,Indo-Western Cape Style Kurta Set,1,Women,Kurtas,IndoChic,Traditional,2899.0,1507.48,31.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+200,Straight-Cut Banarasi Brocade Kurti,1,Women,Kurtas,Salesphere Luxe,Traditional,1699.0,883.48,32.0,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+201,Angrakha Flared Festive Anarkali,1,Women,Kurtas,IndoChic,Traditional,2499.0,1299.48,32.4,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+202,Embroidered Net Festive Dupatta,1,Women,Accessories,Salesphere Luxe,Traditional,899.0,467.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+203,Handcrafted Kundan Choker Necklace Set,1,Women,Accessories,Salesphere Luxe,Traditional,1899.0,987.48,36.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+204,Embroidered Bridal Potli Bag,1,Women,Accessories,Salesphere Luxe,Traditional,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+205,Block-Heel Ankle-Strap Leather Sandals,1,Women,Footwear,UrbanThread,Western,1999.0,1039.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+206,Structured Italian-Finish Leather Tote Bag,1,Women,Accessories,Salesphere Luxe,Western,2499.0,1299.48,34.2,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+207,Zari Hand-Embroidered Festive Juttis,1,Women,Footwear,Salesphere Luxe,Traditional,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+208,Statement Mirror-Work Festive Kada,1,Women,Accessories,IndoChic,Traditional,699.0,363.48,36.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+209,Gold-Plated Temple Jhumka Earrings,1,Women,Accessories,Salesphere Luxe,Traditional,1199.0,623.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+210,Chic Polarized Cat-Eye Sunglasses,1,Women,Accessories,UrbanThread,Western,1299.0,675.48,35.0,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+211,Dino-Safari Organic Cotton Tee,3,Kids,T-shirts,Aura Kids,Western,499.0,259.48,37.5,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+212,Space Astronaut Glow Graphic Tee,3,Kids,T-shirts,Aura Kids,Western,549.0,285.48,38.9,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+213,Rainbow Unicorn Pastel Cotton Tee,3,Kids,T-shirts,Aura Kids,Western,499.0,259.48,37.5,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+214,Striped Breton Crewneck Cotton Tee,3,Kids,T-shirts,Aura Kids,Western,499.0,259.48,37.5,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+215,Floral Embroidered Flutter-Sleeve Top,3,Kids,T-shirts,Aura Kids,Western,599.0,311.48,33.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+216,Pack of 3 Everyday Playtime Tees,3,Kids,T-shirts,Aura Kids,Western,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+217,Smart Oxford Button-Down Casual Shirt,3,Kids,Shirts,Aura Kids,Western,799.0,415.48,38.5,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+218,Tropical Palm Leaf Resort Shirt,3,Kids,Shirts,Aura Kids,Western,699.0,363.48,36.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+219,Tartan Plaid Flannel Casual Shirt,3,Kids,Shirts,Aura Kids,Western,749.0,389.48,37.5,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+220,Mandarin-Collar Linen-Blend Shirt,3,Kids,Shirts,Aura Kids,Western,699.0,363.48,36.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+221,Floral Tiered Summer Cotton Sundress,3,Kids,Dresses,Aura Kids,Western,899.0,467.48,35.7,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+222,Polka-Dot Fit & Flare Party Dress,3,Kids,Dresses,Aura Kids,Western,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+223,Princess Sparkle Tulle Birthday Frock,3,Kids,Dresses,Aura Kids,Western,1299.0,675.48,35.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+224,Pastel Gingham Ruffle-Hem Dress,3,Kids,Dresses,Aura Kids,Western,849.0,441.48,34.6,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+225,Denim Pinafore Dungaree Dress,3,Kids,Dresses,Aura Kids,Western,1099.0,571.48,35.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+226,Colorblocked Fleece Pullover Hoodie,3,Kids,Hoodies & Sweatshirts,Aura Kids,Western,899.0,467.48,35.7,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+227,Cozy Sherpa Fleece Zip-Up Jacket,3,Kids,Hoodies & Sweatshirts,Aura Kids,Western,1199.0,623.48,33.4,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+228,Dinosaur Spikes Fun Fleece Sweatshirt,3,Kids,Hoodies & Sweatshirts,Aura Kids,Western,799.0,415.48,36.0,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+229,Kids Comfort Stretch Denim Jeans,3,Kids,Jeans,Aura Kids,Western,899.0,467.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+230,Elastic-Waist Relaxed Cargo Joggers,3,Kids,Jeans,Aura Kids,Western,799.0,415.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+231,Adjustable Denim Dungaree Overalls,3,Kids,Jeans,Aura Kids,Western,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+232,Cotton Twill Pull-On Chino Shorts,3,Kids,Jeans,Aura Kids,Western,599.0,311.48,33.4,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+233,Quilted Puffer Winter Hooded Vest,3,Kids,Jackets,Aura Kids,Western,1199.0,623.48,33.4,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+234,Kids Canvas Grip Sneaker Shoes,3,Kids,Footwear,Aura Kids,Western,999.0,519.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+235,Girls Floral Ballerina Flat Shoes,3,Kids,Footwear,Aura Kids,Western,899.0,467.48,35.7,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+236,2-Piece Cotton Pajama Sleepwear Set,3,Kids,Loungewear,Aura Kids,Western,699.0,363.48,36.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+237,Boys Silk-Blend Kurta Pyjama with Brocade Jacket,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1499.0,779.48,34.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+238,Boys Traditional Dhoti Kurta Ensemble,3,Kids,Festive Wear,Aura Kids,Traditional,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+239,Girls Floral Jacquard Lehenga Choli Set,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1699.0,883.48,34.6,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+240,Girls Embroidered Anarkali Frock with Dupatta,3,Kids,Festive Wear,Aura Kids,Traditional,1399.0,727.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+241,Boys Royal Velvet Sherwani Set,3,Kids,Festive Wear,Salesphere Luxe,Traditional,2199.0,1143.48,33.3,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+242,Girls Bandhani Print Festive Ghagra Choli,3,Kids,Festive Wear,Aura Kids,Traditional,1299.0,675.48,31.6,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+243,Boys Embroidered Lucknowi Chikankari Kurta,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1199.0,623.48,33.4,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+244,Girls Sequin Sharara Festive 3-Piece Set,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1599.0,831.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+245,Boys Asymmetrical Indo-Western Cowl Kurta,3,Kids,Festive Wear,Aura Kids,Traditional,1349.0,701.48,32.5,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+246,Girls Silk Pattu Pavadai Traditional Frock,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+247,Boys Mirror-Work Festive Short Kurta,3,Kids,Festive Wear,Aura Kids,Traditional,899.0,467.48,35.7,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+248,Girls Mirror-Work Chaniya Choli for Navratri,3,Kids,Festive Wear,Aura Kids,Traditional,1799.0,935.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+249,Boys Festive Nehru Jacket,3,Kids,Festive Wear,Aura Kids,Traditional,999.0,519.48,33.4,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+250,Girls Velvet Winter Festive Gown,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1899.0,987.48,32.2,Winter,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+251,Boys Angrakha Cotton Kurta Set,3,Kids,Festive Wear,Aura Kids,Traditional,1099.0,571.48,31.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+252,Girls Organza Floral Tiered Festive Frock,3,Kids,Festive Wear,Salesphere Luxe,Traditional,1599.0,831.48,33.3,Spring,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+253,Boys Embroidered Pathani Suit,3,Kids,Festive Wear,Aura Kids,Traditional,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+254,Girls Gotta Patti Straight Kurti with Pants,3,Kids,Festive Wear,Aura Kids,Traditional,1199.0,623.48,29.4,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+255,Boys Pure Cotton Everyday Puja Kurta,3,Kids,Festive Wear,Aura Kids,Traditional,599.0,311.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+256,Girls Handloom Cotton Festive Co-ord Set,3,Kids,Festive Wear,Aura Kids,Traditional,1099.0,571.48,31.3,Summer,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+257,Boys Bandhani Printed Festive Kurta,3,Kids,Festive Wear,Aura Kids,Traditional,799.0,415.48,33.4,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+258,Girls Brocade Yoke Festive Tunic,3,Kids,Festive Wear,Aura Kids,Traditional,899.0,467.48,30.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+259,Boys Handcrafted Ethnic Mojari Juttis,3,Kids,Footwear,Aura Kids,Traditional,899.0,467.48,30.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+260,Girls Embroidered Festive Juttis with Ghungroo,3,Kids,Footwear,Aura Kids,Traditional,949.0,493.48,32.2,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+261,Traditional Zari Work Festive Gandhi Topi,3,Kids,Accessories,Aura Kids,Traditional,399.0,207.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+262,Kids Festive Silk Dupatta with Tassels,3,Kids,Accessories,Aura Kids,Traditional,499.0,259.48,33.4,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+263,Royal Decorative Diya Gift Set – 12 Pieces,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1499.0,779.48,34.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+264,Brass Lotus Diya Set,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+265,Golden LED Curtain Fairy Lights,4,Home Essentials,Festive Lighting,SaleSphere,Festive Decor,1499.0,779.48,31.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+266,Grand Diwali Living Room Décor Collection,4,Home Essentials,Festive Home Styling,SaleSphere,Festive Decor,1999.0,1039.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+267,Lakshmi Ganesha Festive Idol Set,4,Home Essentials,Pooja Essentials,SaleSphere,Festive Decor,1999.0,1039.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+268,Floating Lotus Diya Urli Set,4,Home Essentials,Urli & Brass Décor,SaleSphere,Festive Decor,1499.0,779.48,31.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+269,Antique Brass Decorative Lantern,4,Home Essentials,Lanterns & Kandils,SaleSphere,Festive Decor,1699.0,883.48,32.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+270,Traditional Festive Table Décor Set,4,Home Essentials,Festive Home Styling,SaleSphere,Festive Decor,1799.0,935.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+271,Traditional Hanging Diwali Kandil,4,Home Essentials,Lanterns & Kandils,SaleSphere,Festive Decor,1299.0,675.48,31.6,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+272,Brass Urli with Floating Flower Décor,4,Home Essentials,Urli & Brass Décor,SaleSphere,Festive Decor,1799.0,935.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+273,Handcrafted Traditional Diya Set,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1199.0,623.48,29.4,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+274,Festive Embroidered Cushion Cover Set,4,Home Essentials,Festive Home Styling,SaleSphere,Festive Decor,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+275,Traditional Decorative Rangoli Mat,4,Home Essentials,Rangoli & Floor Décor,SaleSphere,Festive Decor,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+276,Festive Door Entrance Toran Décor Set,4,Home Essentials,Entrance Décor & Torans,SaleSphere,Festive Decor,1799.0,935.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+277,Rangoli Colour Powder Gift Set,4,Home Essentials,Rangoli & Floor Décor,SaleSphere,Festive Decor,1099.0,571.48,31.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+278,Brass Pooja Kalash Set,4,Home Essentials,Pooja Essentials,SaleSphere,Festive Decor,1599.0,831.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+279,Premium Traditional Hanging Kandil,4,Home Essentials,Lanterns & Kandils,SaleSphere,Festive Decor,1499.0,779.48,31.8,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+280,Handcrafted Decorative Diya Bowl Set,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1499.0,779.48,31.8,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+281,Festive Living Room Styling Collection,4,Home Essentials,Festive Home Styling,SaleSphere,Festive Decor,1999.0,1039.48,33.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+282,Terracotta Diya Set,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1099.0,571.48,31.3,Festive/Autumn,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+283,Traditional Brass Pooja Thali Set,4,Home Essentials,Pooja Essentials,SaleSphere,Festive Decor,1799.0,935.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+284,Premium Brass Deepak Set,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1699.0,883.48,32.0,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+285,Traditional Beaded Door Hanging Toran,4,Home Essentials,Entrance Décor & Torans,SaleSphere,Festive Decor,1299.0,675.48,31.6,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00
+286,Antique Brass Standing Deepam,4,Home Essentials,Diyas & Deepams,SaleSphere,Festive Decor,1999.0,1039.48,33.3,All Season,Active,2019-01-01 10:00:00,2026-11-02 18:00:00

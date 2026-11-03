@@ -22,6 +22,7 @@ if str(BACKEND_DIR) not in sys.path:
 
 from fastapi import FastAPI, APIRouter
 from starlette.middleware.cors import CORSMiddleware
+from starlette.staticfiles import StaticFiles
 from pydantic import BaseModel
 from datetime import datetime
 
@@ -40,6 +41,11 @@ async def lifespan(app: FastAPI):
     # Shutdown
 
 app = FastAPI(title="SalesSphere API", version="2.0.0", lifespan=lifespan)
+
+# Mount local photos directory for home essentials
+photos_dir = ROOT_DIR / "frontend" / "photos_for_homeessential"
+if photos_dir.exists():
+    app.mount("/photos_for_homeessential", StaticFiles(directory=str(photos_dir)), name="photos_for_homeessential")
 
 # CORS configuration for Vite frontend running on port 3000 or local dev ports
 app.add_middleware(
@@ -71,7 +77,7 @@ async def health_check() -> HealthStatus:
         status="healthy",
         timestamp=datetime.now().isoformat(),
         version="2.0.0",
-        warehouse_dataset="salesphere_unified_dataset_v2.csv (45,000 rows)",
+        warehouse_dataset="salesphere_unified_dataset_v2.csv (48,500+ rows)",
         database="SQLite Star Schema (ecommerce_dw.db + operational.db)"
     )
 

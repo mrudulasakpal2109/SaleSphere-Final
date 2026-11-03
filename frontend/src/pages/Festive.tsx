@@ -15,7 +15,8 @@ const SECTIONS: { id: string; short: string; overline: string; title: string; qu
   { id: "lehengas-sarees", short: "Lehengas & Sarees", overline: "Wedding season", title: "Lehengas & Sarees", query: { category: "women", subcategory: "Ethnic Wear", tag: "festive", limit: 8 }, link: "/women?subcategory=Ethnic+Wear" },
   { id: "kurtas", short: "Kurtas", overline: "Diwali evenings", title: "Festive Kurtas & Anarkalis", query: { category: "women", subcategory: "Kurtas", tag: "festive", limit: 8 }, link: "/women?subcategory=Kurtas" },
   { id: "men", short: "Men", overline: "For him", title: "Kurtas, Nehru Jackets & Sherwanis", query: { category: "men", tag: "festive", limit: 8 }, link: "/men?subcategory=Ethnic+Wear" },
-  { id: "kids", short: "Kids", overline: "Little celebrations", title: "Kids' Festive Wear", query: { category: "kids", tag: "festive", limit: 8 }, link: "/kids?subcategory=Festive+Wear" },
+  { id: "kids", short: "Kids", overline: "Little celebrations", title: "Kids' Festive Wear", query: { category: "kids", tag: "festive", limit: 8 }, link: "/kids?subcategory=Ethnic+Wear" },
+  { id: "home", short: "Festive Home", overline: "Decor & Glow", title: "Festive Home, Lights & Decor", query: { category: "home", tag: "festive", limit: 8 }, link: "/home-essentials" },
 ];
 
 function FestiveSection({ section }: { section: (typeof SECTIONS)[number] }) {

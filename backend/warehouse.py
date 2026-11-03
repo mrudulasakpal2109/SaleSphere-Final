@@ -48,11 +48,13 @@ def init_data_warehouse(force_reseed: bool = False):
     conn.execute("PRAGMA foreign_keys = OFF;")
     cursor = conn.cursor()
 
-    # Check if table already contains 45,000 records
+    # Check if table already contains 45,000 records and full product dimension
     table_exists = cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='fact_transactions';").fetchone()
     if table_exists and not force_reseed:
         cnt = cursor.execute("SELECT COUNT(*) FROM fact_transactions;").fetchone()[0]
-        if cnt >= 45000:
+        prod_tbl = cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='dim_product';").fetchone()
+        prod_cnt = cursor.execute("SELECT COUNT(*) FROM dim_product;").fetchone()[0] if prod_tbl else 0
+        if cnt >= 45000 and prod_cnt >= 180:
             conn.close()
             return
 
@@ -762,9 +764,15 @@ def sync_live_orders_to_warehouse() -> int:
                 net = round(gross - disc_amt, 2)
 
                 # Map category
-                cat_name = it.get("category", "Women").capitalize()
-                if cat_name not in ["Men", "Women", "Kids"]:
-                    cat_name = "Women"
+                cat_raw = str(it.get("category", "")).strip().lower()
+                if "home" in cat_raw:
+                    cat_name = "Home Essentials"
+                elif cat_raw == "men":
+                    cat_name = "Men"
+                elif cat_raw == "kids":
+                    cat_name = "Kids"
+                else:
+                    cat_name = None
 
                 # Assign product_id: integer or lookup by name/sku in dim_product
                 pid_val = 101
@@ -773,13 +781,18 @@ def sync_live_orders_to_warehouse() -> int:
                     if str(it.get("product_id")).isdigit():
                         pid_val = int(it["product_id"])
                     elif it.get("name"):
-                        p_match = dw_cur.execute("SELECT product_id, brand FROM dim_product WHERE LOWER(product_name) = LOWER(?);", (it["name"],)).fetchone()
+                        p_match = dw_cur.execute("SELECT product_id, brand, category_name FROM dim_product WHERE LOWER(product_name) = LOWER(?);", (it["name"],)).fetchone()
                         if p_match:
                             pid_val = int(p_match[0])
                             if p_match[1]:
                                 brand_val = p_match[1]
+                            if not cat_name and p_match[2]:
+                                cat_name = p_match[2]
                 except Exception:
                     pid_val = 101
+
+                if not cat_name:
+                    cat_name = "Women"
 
                 new_tx_records.append((
                     item_id,
@@ -1490,14 +1503,14 @@ def get_data_quality_report() -> dict:
     })
 
     # Check 5: Temporal Consistency & Horizon Validity
-    q5 = "SELECT COUNT(*) FROM fact_transactions WHERE order_date > '2026-12-31' OR order_date < '2020-01-01';"
+    q5 = "SELECT COUNT(*) FROM fact_transactions WHERE order_date > '2026-12-31' OR order_date < '2019-01-01';"
     v5 = cur.execute(q5).fetchone()[0]
     checks.append({
         "id": "DQ-TC-01",
         "name": "Order Date Chronological Boundary",
         "category": "temporal_consistency",
         "table": "fact_transactions",
-        "description": "Ensures transaction order dates fall within the valid chronological range (2020-01-01 to 2026-12-31) and contain no corrupt future dates.",
+        "description": "Ensures transaction order dates fall within the valid chronological range (2019-01-01 to 2026-12-31) and contain no corrupt future dates.",
         "status": "PASS" if v5 == 0 else "FAIL",
         "total_records_checked": total_tx,
         "violations_count": v5,

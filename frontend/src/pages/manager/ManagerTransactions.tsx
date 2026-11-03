@@ -120,11 +120,11 @@ export default function ManagerTransactions() {
       <div className="border border-border bg-card p-4 rounded-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
         <div>
           <span className="font-semibold text-foreground">Authoritative Dataset:</span>{" "}
-          <span className="font-mono text-muted-foreground">salesphere_unified_dataset_v2.csv</span> (45,000 historical rows)
+          <span className="font-mono text-muted-foreground">salesphere_unified_dataset_v2.csv</span> (48,500+ fact records)
           <span className="ml-2 text-muted-foreground">• Live customer purchases are appended incrementally to fact_transactions.</span>
         </div>
         <div className="font-mono text-xs font-medium text-foreground">
-          Total Records: {data?.total?.toLocaleString() ?? "45,000+"}
+          Total Records: {data?.total?.toLocaleString() ?? "48,500+"}
         </div>
       </div>
 
@@ -150,6 +150,7 @@ export default function ManagerTransactions() {
           <option value="Women">Women</option>
           <option value="Men">Men</option>
           <option value="Kids">Kids</option>
+          <option value="Home Essentials">Home Essentials</option>
         </select>
 
         <select

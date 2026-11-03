@@ -140,16 +140,18 @@ export function ProductCard({ product }: { product: Product }) {
       </div>
 
       <div className="mt-3 flex flex-col gap-1">
-        <div className="flex items-start justify-between gap-2">
-          <Link to={`/product/${product.id}`} className="text-sm font-medium leading-snug hover:text-sale">
-            {product.name}
-          </Link>
-        </div>
-        <p className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
+        <Link
+          to={`/product/${product.id}`}
+          className="line-clamp-2 h-10 text-sm font-medium leading-snug transition-colors hover:text-sale"
+          title={product.name}
+        >
+          {product.name}
+        </Link>
+        <p className="text-[11px] uppercase tracking-[0.16em] text-muted-foreground truncate">
           {product.subcategory}
         </p>
         <div className="mt-0.5 flex flex-wrap items-center gap-2">
-          <span className="font-mono text-sm font-medium" data-testid={`product-card-price-${product.sku}`}>
+          <span className="font-mono text-sm font-semibold text-foreground" data-testid={`product-card-price-${product.sku}`}>
             {formatINR(product.price)}
           </span>
           {product.original_price && product.original_price > product.price && (
@@ -157,8 +159,13 @@ export function ProductCard({ product }: { product: Product }) {
               {formatINR(product.original_price)}
             </span>
           )}
+          {product.discount_percent > 0 && (
+            <span className="text-[11px] font-bold uppercase tracking-tight text-sale">
+              {product.discount_percent}% OFF
+            </span>
+          )}
         </div>
-        <div className="mt-1 flex items-center justify-between gap-2">
+        <div className="mt-1 flex items-center justify-between gap-2 border-t border-border/40 pt-1.5">
           <RatingStars rating={product.rating} count={product.rating_count} />
           <span className="flex items-center gap-1">
             {product.colors.slice(0, 4).map((c) => (

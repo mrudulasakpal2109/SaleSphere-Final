@@ -28,6 +28,7 @@ const NAV_LINKS = [
   { to: "/men", label: "Men", testId: "nav-men" },
   { to: "/women", label: "Women", testId: "nav-women" },
   { to: "/kids", label: "Kids", testId: "nav-kids" },
+  { to: "/home-essentials", label: "Home Essentials", testId: "nav-home-essentials" },
   { to: "/new-arrivals", label: "New Arrivals", testId: "nav-new-arrivals" },
   { to: "/festive", label: "Festive", testId: "nav-festive" },
   { to: "/sale", label: "Sale", testId: "nav-sale" },

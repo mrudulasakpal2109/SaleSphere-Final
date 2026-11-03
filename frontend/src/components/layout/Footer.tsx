@@ -6,6 +6,8 @@ const SHOP_LINKS = [
   { to: "/men", label: "Men" },
   { to: "/women", label: "Women" },
   { to: "/kids", label: "Kids" },
+  { to: "/home-essentials", label: "Home Essentials" },
+  { to: "/festive", label: "Festive Edit" },
   { to: "/new-arrivals", label: "New Arrivals" },
   { to: "/sale", label: "Sale" },
 ];

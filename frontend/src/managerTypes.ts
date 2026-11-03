@@ -508,20 +508,138 @@ export interface DemandPredictionResult {
   product_name: string;
   category: string;
   subcategory: string;
+  collection?: string;
   brand: string;
-  price: number;
-  discount_percentage: number;
+  image_url?: string;
+  price?: number;
+  proposed_price?: number;
+  recommended_price?: number;
+  category_average_price?: number;
+  price_explanation?: string;
+  pricing_analysis?: {
+    proposed_price: number;
+    category_benchmark: number;
+    recommended_price: number;
+    recommended_discount: number;
+    competitiveness: string;
+    price_diff_pct: number;
+    explanation: string;
+  };
+  product_details?: {
+    fabric_or_material?: string;
+    occasion_or_room?: string;
+    sleeve_type?: string;
+    pattern?: string;
+    dimensions?: string;
+  };
+  best_performing_categories?: { name: string; units_sold: number }[];
+  popular_colors?: { color: string; share: string; sentiment: string }[];
+  discount_percentage?: number;
   launch_month: number;
+  launch_month_name?: string;
   season: string;
+  festival_analysis?: {
+    festivals: string[];
+    seasonal_context: string;
+    description: string;
+    multiplier: number;
+  };
   proposed_stock: number;
   predicted_units: number;
-  prediction_period: string;
-  demand_tier: "High" | "Medium" | "Low";
+  prediction_period?: string;
+  demand_tier: "High" | "Medium" | "Low" | string;
   probabilities: Record<string, number>;
-  probability_explanation: string;
+  confidence_pct?: number;
+  demand_explanation?: string;
+  probability_explanation?: string;
   suggested_initial_stock: number;
-  inventory_gap: InventoryGap;
-  recommendation: DemandRecommendation;
+  feature_importances?: {
+    feature: string;
+    label: string;
+    importance: number;
+  }[];
+  inventory_risk?: {
+    level: string;
+    badge: string;
+    reasoning: string;
+    overstock_risk?: string;
+    stockout_risk?: string;
+    holding_risk?: string;
+    proposed_stock?: number;
+    estimated_demand?: number;
+    recommended_stock?: number;
+    suggested_adjustment?: string;
+    suggested_adjustment_units?: number;
+  };
+  stock_evaluation?: {
+    proposed_stock: number;
+    recommended_stock: number;
+    difference: number;
+    explanation: string;
+  };
+  monthly_trends?: {
+    month: number;
+    month_name: string;
+    full_month_name: string;
+    historical_units: number;
+    seasonal_index: number;
+    projected_units: number;
+    festivals: string[];
+    is_recommended: boolean;
+    is_selected: boolean;
+  }[];
+  best_launch_month?: {
+    month: number;
+    name: string;
+    projected_units: number;
+    seasonal_index: number;
+    reason: string;
+  };
+  second_best_launch_month?: {
+    month: number;
+    name: string;
+    projected_units: number;
+    seasonal_index: number;
+    reason: string;
+  };
+  lowest_demand_period?: {
+    period: string;
+    reason: string;
+  };
+  seasonal_explanation?: string;
+  customer_segment_analysis?: {
+    selected_segment: string;
+    rfm_cluster: string;
+    historical_aov: number;
+    purchase_frequency: string;
+    top_categories: string[];
+    fit_reasoning: string;
+  };
+  manager_recommendation?: {
+    status: string;
+    badge_color: string;
+    recommended_price: number;
+    recommended_discount: number;
+    recommended_launch_month: string;
+    recommended_launch_month_num: number;
+    recommended_initial_stock: number;
+    main_risks: string[];
+    suggested_customer_segment: string;
+    rationale: string;
+  };
+  launch_priority?: {
+    priority: string;
+    badge: string;
+    reasoning: string;
+  };
+  decision_tree_flow?: {
+    step: number;
+    title: string;
+    value: string;
+    detail: string;
+  }[];
+  inventory_gap?: InventoryGap;
+  recommendation?: DemandRecommendation;
   decision_path: DecisionPathRule[];
   prediction_id?: string;
 }

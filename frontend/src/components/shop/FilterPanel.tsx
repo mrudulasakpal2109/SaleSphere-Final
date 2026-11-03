@@ -128,7 +128,7 @@ export function FilterPanel({
       <section>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em]">Size</p>
         <div className="flex flex-wrap gap-1.5">
-          {["XS", "S", "M", "L", "XL", "XXL", "UK6", "UK7", "UK8", "UK9", "UK10", "2-3Y", "4-5Y", "8-9Y", "One Size"].map((s) => (
+          {["XS", "S", "M", "L", "XL", "XXL", "UK7", "UK8", "UK9", "4-5Y", "6-7Y", "Pack of 2", "Pack of 3", "Pack of 6", "Set of 5", "Set of 7", "Set of 8", "Set of 21", "12 Inch", "14 Inch", "Standard", "One Size"].map((s) => (
             <button
               key={s}
               type="button"
@@ -149,7 +149,7 @@ export function FilterPanel({
       <section>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.16em]">Colour</p>
         <div className="flex flex-wrap gap-2">
-          {["Black", "White", "Beige", "Navy", "Blue", "Sky Blue", "Red", "Maroon", "Pink", "Green", "Olive", "Yellow", "Grey", "Brown", "Teal", "Multi"].map((c) => (
+          {["Brass / Gold", "Antique Brass", "Gold", "Terracotta", "Marigold Yellow", "Red", "Maroon", "Black", "White", "Beige", "Navy", "Blue", "Pink", "Green", "Olive", "Yellow", "Teal", "Copper", "Multi"].map((c) => (
             <button
               key={c}
               type="button"
@@ -161,7 +161,7 @@ export function FilterPanel({
               className={`h-7 w-7 rounded-full border-2 transition ${
                 state.color === c ? "border-foreground ring-1 ring-foreground ring-offset-1" : "border-border"
               }`}
-              style={{ backgroundColor: COLOR_HEX[c] }}
+              style={{ backgroundColor: COLOR_HEX[c] ?? "#D6D1CA" }}
             />
           ))}
         </div>
